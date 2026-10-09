@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- GOOGLE TAG: substituir pelos IDs reais do cliente -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');      // GA4
+    gtag('config', 'AW-XXXXXXXXXX');     // Google Ads
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1F1A17" />
+  <title>Copos e Garrafas Térmicas Personalizados com Logo | Nikenauer Brindes</title>
+  <meta name="description" content="Copos, garrafas e taças térmicas personalizados com gravação a laser para empresas, eventos e kits de colaboradores. Arte digital inclusa e orçamento rápido pelo WhatsApp." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#1F1A17',
+            'ink-soft': '#3A332E',
+            cream: '#FAF7F2',
+            sand: '#F1EAE0',
+            line: '#E6DDD1',
+            orange: '#E8833A',
+            'orange-dark': '#C96A24',
+            'orange-soft': '#FCEBDC',
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { font-family: 'Inter', sans-serif; background: #FAF7F2; color: #1F1A17; overflow-x: hidden; padding-bottom: 76px; }
+    @media (min-width: 768px) { body { padding-bottom: 0; } }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+      min-height: 52px; padding: 0 1.6rem; border-radius: 999px;
+      font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1rem;
+      transition: all .25s ease; text-align: center;
+    }
+    .btn-primary { background: #E8833A; color: #fff; box-shadow: 0 8px 24px -8px rgba(232,131,58,.6); }
+    .btn-primary:hover { background: #C96A24; transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: #1F1A17; border: 1.5px solid #1F1A17; }
+    .btn-ghost:hover { background: #1F1A17; color: #fff; }
+    .btn-light { background: #fff; color: #1F1A17; }
+    .btn-light:hover { background: #FCEBDC; }
+
+    .eyebrow { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; color: #E8833A; }
+
+    /* Foto com fallback: se a imagem não existir, aparece o rótulo */
+    .photo { position: relative; overflow: hidden; background: #F1EAE0; display: flex; align-items: center; justify-content: center; }
+    .photo span { font-size: .75rem; color: #9C8B7A; text-align: center; padding: 1rem; }
+    .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .group:hover .photo img { transform: scale(1.05); }
+
+    .card { background: #fff; border: 1px solid #E6DDD1; border-radius: 20px; }
+
+    .snap-row { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: .5rem; }
+    .snap-row::-webkit-scrollbar { display: none; }
+    .snap-row > * { scroll-snap-align: start; flex-shrink: 0; }
+
+    input, select { font-size: 16px !important; } /* evita zoom no iOS */
+    .field { width: 100%; min-height: 52px; border: 1.5px solid #E6DDD1; border-radius: 14px; padding: 0 1rem; background: #fff; color: #1F1A17; outline: none; transition: border .2s; }
+    .field:focus { border-color: #E8833A; }
+    .field.error { border-color: #D64545; }
+
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .chev { transform: rotate(45deg); }
+    .chev { transition: transform .25s; }
+
+    .wa-float { position: fixed; right: 18px; bottom: 92px; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px -6px rgba(0,0,0,.35); z-index: 60; transition: transform .25s; }
+    .wa-float:hover { transform: scale(1.08); }
+    @media (min-width: 768px) { .wa-float { bottom: 28px; right: 28px; } }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: all .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-cream/90 border-b border-line" style="backdrop-filter: blur(12px);">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="#topo" class="flex items-center gap-2">
+      <!-- Substituir por: <img src="imagens/logo.png" alt="Nikenauer" class="h-10 md:h-12"> -->
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none" stroke="#E8833A" stroke-width="1.6"><path d="M20 3 L33 16 L20 29 L7 16 Z"/><path d="M20 11 L27 18 L20 25 L13 18 Z"/><path d="M20 29 V37"/></svg>
+      <span class="font-display font-medium tracking-[.25em] text-orange text-sm md:text-base">NIKENAUER</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-ink-soft">
+      <a href="#produtos" class="hover:text-orange transition">Produtos</a>
+      <a href="#ocasioes" class="hover:text-orange transition">Ocasiões</a>
+      <a href="#como-funciona" class="hover:text-orange transition">Como funciona</a>
+      <a href="#entregas" class="hover:text-orange transition">Entregas</a>
+      <a href="#duvidas" class="hover:text-orange transition">Dúvidas</a>
+    </nav>
+    <a href="#orcamento" class="btn btn-primary !min-h-[42px] !px-5 text-sm">Pedir orçamento</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="topo" class="pt-24 md:pt-32 pb-14 md:pb-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+    <div>
+      <p class="eyebrow mb-4">Brindes corporativos com gravação a laser</p>
+      <h1 class="font-display font-bold leading-[1.05] tracking-tight mb-5" style="font-size: clamp(2.1rem, 5.5vw, 4rem);">
+        Copos e garrafas térmicas <span class="text-orange">com a marca</span> da sua empresa
+      </h1>
+      <p class="text-ink-soft text-base md:text-lg leading-relaxed mb-7 max-w-xl">
+        Personalização que não desbota, com o logo da empresa e até o nome de cada colaborador. Para kits de onboarding, SIPAT, eventos e presentes de fim de ano.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#orcamento" class="btn btn-primary">Quero um orçamento
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#entregas" class="btn btn-ghost">Ver pedidos entregues</a>
+      </div>
+      <ul class="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-3 text-sm text-ink-soft">
+        <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-orange-soft text-orange flex items-center justify-center text-xs">✓</span>Gravação a laser</li>
+        <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-orange-soft text-orange flex items-center justify-center text-xs">✓</span>Arte digital inclusa</li>
+        <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-orange-soft text-orange flex items-center justify-center text-xs">✓</span>Nome individual</li>
+        <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-orange-soft text-orange flex items-center justify-center text-xs">✓</span>Aprovação antes de gravar</li>
+      </ul>
+    </div>
+
+    <div class="relative">
+      <div class="photo rounded-[28px] aspect-[4/5] md:aspect-[5/5]">
+        <span>Foto hero: lote de copos gravados com nomes</span>
+        <img src="imagens/hero.jpg" alt="Copos térmicos personalizados com logo e nome de colaboradores" onerror="this.remove()">
+      </div>
+      <div class="absolute -bottom-5 left-4 md:-left-6 card px-5 py-4 flex items-center gap-3 shadow-xl">
+        <div class="w-11 h-11 rounded-full bg-orange-soft flex items-center justify-center">
+          <svg width="22" height="22" fill="none" stroke="#E8833A" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18 22l-6-3.6L6 22l1.5-7.2L2 10l7.1-1.1z"/></svg>
+        </div>
+        <div>
+          <p class="font-display font-semibold text-sm leading-tight">Indústria, saúde e órgãos públicos</p>
+          <p class="text-xs text-ink-soft">já presenteiam com Nikenauer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTES ============ -->
+<section class="bg-ink py-10">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <p class="text-center text-white/60 text-xs md:text-sm uppercase tracking-[.2em] mb-6">Empresas que já confiaram na Nikenauer</p>
+    <!-- Substituir textos por logos em PNG branco: <img src="imagens/cliente-embraer.png" class="h-7 opacity-70"> -->
+    <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-5 md:gap-x-16 font-display font-semibold text-white/70 text-lg md:text-2xl tracking-wide">
+      <span>EMBRAER</span><span>DAEE</span><span>TECDEWORK</span><span>OLENSCKI</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUTOS ============ -->
+<section id="produtos" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mb-10 md:mb-14 reveal">
+      <p class="eyebrow mb-3">Linha de produtos</p>
+      <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Escolha o modelo. A gente grava a sua marca.</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+      <!-- Produto 1 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: copo térmico com tampa</span><img src="imagens/copo-termico.jpg" alt="Copo térmico personalizado" onerror="this.remove()"></div>
+        <div class="p-6">
+          <span class="inline-block text-[11px] font-semibold uppercase tracking-wider bg-orange-soft text-orange-dark px-3 py-1 rounded-full mb-3">Mais pedido</span>
+          <h3 class="font-display font-semibold text-xl mb-2">Copo térmico com tampa</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">O queridinho dos kits de colaborador. Mantém a temperatura e vai para a mesa de trabalho todos os dias.</p>
+          <a href="#orcamento" data-produto="Copo térmico" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+      <!-- Produto 2 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: garrafas térmicas (ex.: Embraer)</span><img src="imagens/garrafa.jpg" alt="Garrafa térmica personalizada" onerror="this.remove()"></div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-xl mb-2">Garrafa térmica inox</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">Brinde premium para clientes, SIPAT e ações de saúde. Várias cores para combinar com a identidade da marca.</p>
+          <a href="#orcamento" data-produto="Garrafa térmica" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+      <!-- Produto 3 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: taças térmicas coloridas</span><img src="imagens/taca.jpg" alt="Taça térmica personalizada" onerror="this.remove()"></div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-xl mb-2">Taça térmica</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">Perfeita para festas, formaturas, casamentos e Carnaval. Colorida, com arte temática do evento.</p>
+          <a href="#orcamento" data-produto="Taça térmica" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+      <!-- Produto 4 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: copo de café inox</span><img src="imagens/cafe.jpg" alt="Copo de café inox personalizado" onerror="this.remove()"></div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-xl mb-2">Copo de café inox</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">Pequeno, elegante e útil. Ótimo presente de fim de ano e brinde para escritórios e consultórios.</p>
+          <a href="#orcamento" data-produto="Copo de café" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+      <!-- Produto 5 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: copo long drink preto</span><img src="imagens/copo-long.jpg" alt="Copo térmico long drink personalizado" onerror="this.remove()"></div>
+        <div class="p-6">
+          <h3 class="font-display font-semibold text-xl mb-2">Copo térmico long drink</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">Visual sóbrio e moderno, com gravação de alto contraste. Ideal para clínicas, escritórios e eventos.</p>
+          <a href="#orcamento" data-produto="Copo long drink" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+      <!-- Produto 6 -->
+      <article class="card group overflow-hidden reveal">
+        <div class="photo aspect-[4/3]"><span>Foto: luminária em acrílico com LED</span><img src="imagens/luminaria.jpg" alt="Luminária de acrílico personalizada" onerror="this.remove()"></div>
+        <div class="p-6">
+          <span class="inline-block text-[11px] font-semibold uppercase tracking-wider bg-ink text-white px-3 py-1 rounded-full mb-3">Homenagem</span>
+          <h3 class="font-display font-semibold text-xl mb-2">Troféus e luminárias em acrílico</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-5">Peças com LED e base de madeira para homenagens, premiações e marcos da empresa.</p>
+          <a href="#orcamento" data-produto="Luminária em acrílico" class="pick text-orange font-semibold text-sm inline-flex items-center gap-1">Orçar este modelo →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OCASIÕES ============ -->
+<section id="ocasioes" class="py-16 md:py-24 bg-sand">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+      <div class="max-w-2xl reveal">
+        <p class="eyebrow mb-3">Para cada momento</p>
+        <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Um brinde que as pessoas usam de verdade</h2>
+      </div>
+      <p class="text-sm text-ink-soft md:hidden">Arraste para o lado →</p>
+    </div>
+
+    <div class="snap-row md:grid md:grid-cols-5 md:gap-5 md:overflow-visible">
+      <div class="w-[75%] sm:w-[45%] md:w-auto card p-6">
+        <div class="text-3xl mb-4">🎁</div>
+        <h3 class="font-display font-semibold text-lg mb-2">Fim de ano</h3>
+        <p class="text-sm text-ink-soft">Presente para equipe e clientes que fica na mesa o ano inteiro.</p>
+      </div>
+      <div class="w-[75%] sm:w-[45%] md:w-auto card p-6">
+        <div class="text-3xl mb-4">🦺</div>
+        <h3 class="font-display font-semibold text-lg mb-2">SIPAT e saúde</h3>
+        <p class="text-sm text-ink-soft">Garrafas que incentivam hidratação e reduzem copos descartáveis.</p>
+      </div>
+      <div class="w-[75%] sm:w-[45%] md:w-auto card p-6">
+        <div class="text-3xl mb-4">👋</div>
+        <h3 class="font-display font-semibold text-lg mb-2">Onboarding</h3>
+        <p class="text-sm text-ink-soft">Kit de boas-vindas com o nome do novo colaborador gravado.</p>
+      </div>
+      <div class="w-[75%] sm:w-[45%] md:w-auto card p-6">
+        <div class="text-3xl mb-4">🎤</div>
+        <h3 class="font-display font-semibold text-lg mb-2">Eventos e feiras</h3>
+        <p class="text-sm text-ink-soft">Brinde de estande que é levado para casa, não para o lixo.</p>
+      </div>
+      <div class="w-[75%] sm:w-[45%] md:w-auto card p-6">
+        <div class="text-3xl mb-4">🎓</div>
+        <h3 class="font-display font-semibold text-lg mb-2">Festas e formaturas</h3>
+        <p class="text-sm text-ink-soft">Taças temáticas para casamentos, formaturas e Carnaval.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section id="como-funciona" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+      <p class="eyebrow mb-3">Sem complicação</p>
+      <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Do orçamento à entrega em 4 passos</h2>
+    </div>
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <li class="card p-7 reveal">
+        <span class="font-display font-bold text-5xl text-orange/25">01</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2">Você pede o orçamento</h3>
+        <p class="text-sm text-ink-soft">Informe o modelo, a quantidade e envie o logo pelo WhatsApp.</p>
+      </li>
+      <li class="card p-7 reveal">
+        <span class="font-display font-bold text-5xl text-orange/25">02</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2">Criamos a arte</h3>
+        <p class="text-sm text-ink-soft">Você recebe a simulação digital da peça já com a gravação.</p>
+      </li>
+      <li class="card p-7 reveal">
+        <span class="font-display font-bold text-5xl text-orange/25">03</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2">Você aprova</h3>
+        <p class="text-sm text-ink-soft">A produção só começa depois do seu ok. Sem surpresas.</p>
+      </li>
+      <li class="card p-7 reveal">
+        <span class="font-display font-bold text-5xl text-orange/25">04</span>
+        <h3 class="font-display font-semibold text-lg mt-2 mb-2">Gravamos e entregamos</h3>
+        <p class="text-sm text-ink-soft">Peças conferidas uma a uma e embaladas para distribuição.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="py-16 md:py-24 bg-ink text-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="photo rounded-[28px] aspect-[4/3] !bg-ink-soft order-2 lg:order-1">
+      <span class="!text-white/50">Foto/vídeo: máquina de laser gravando</span>
+      <img src="imagens/laser.jpg" alt="Gravação a laser em copo térmico" onerror="this.remove()">
+    </div>
+    <div class="order-1 lg:order-2">
+      <p class="eyebrow mb-3">Por que a Nikenauer</p>
+      <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight mb-8">Gravação que dura tanto quanto o copo</h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-orange/15 flex items-center justify-center text-orange">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div><h3 class="font-display font-semibold text-lg">Laser, não adesivo</h3><p class="text-white/65 text-sm">A marca é gravada no material. Não descasca, não desbota e aguenta lavagem.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-orange/15 flex items-center justify-center text-orange">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-7 7-7s7 3 7 7M17 11a3 3 0 100-6M22 21c0-3-2-5.5-5-6"/></svg>
+          </div>
+          <div><h3 class="font-display font-semibold text-lg">Nome de cada pessoa</h3><p class="text-white/65 text-sm">Personalização individual no mesmo lote, sem custo de complicação para o RH.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-orange/15 flex items-center justify-center text-orange">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg>
+          </div>
+          <div><h3 class="font-display font-semibold text-lg">Você vê antes de produzir</h3><p class="text-white/65 text-sm">Simulação digital da peça para aprovar com a liderança antes da gravação.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-2xl bg-orange/15 flex items-center justify-center text-orange">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5M7 20a2 2 0 100-4 2 2 0 000 4zM18 20a2 2 0 100-4 2 2 0 000 4z"/></svg>
+          </div>
+          <div><h3 class="font-display font-semibold text-lg">Pronto para distribuir</h3><p class="text-white/65 text-sm">Pedido conferido e embalado. Prazo combinado no orçamento.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTREGAS (GALERIA) ============ -->
+<section id="entregas" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 reveal">
+      <div class="max-w-2xl">
+        <p class="eyebrow mb-3">Pedidos reais</p>
+        <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Algumas entregas recentes</h2>
+      </div>
+      <a href="https://www.instagram.com/nikenauer/" target="_blank" rel="noopener" class="text-orange font-semibold text-sm">Ver mais no Instagram →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      <div class="photo group rounded-2xl aspect-square md:row-span-2 md:aspect-auto"><span>DAEE: copos com nomes</span><img src="imagens/entrega-1.jpg" alt="Copos personalizados DAEE" onerror="this.remove()"></div>
+      <div class="photo group rounded-2xl aspect-square"><span>Embraer: garrafas</span><img src="imagens/entrega-2.jpg" alt="Garrafas personalizadas Embraer" onerror="this.remove()"></div>
+      <div class="photo group rounded-2xl aspect-square"><span>Tecdework: copos</span><img src="imagens/entrega-3.jpg" alt="Copos personalizados Tecdework" onerror="this.remove()"></div>
+      <div class="photo group rounded-2xl aspect-square md:row-span-2 md:aspect-auto"><span>Garrafas São Paulo</span><img src="imagens/entrega-4.jpg" alt="Garrafas térmicas personalizadas" onerror="this.remove()"></div>
+      <div class="photo group rounded-2xl aspect-square"><span>Olenscki: copos</span><img src="imagens/entrega-5.jpg" alt="Copos personalizados Olenscki" onerror="this.remove()"></div>
+      <div class="photo group rounded-2xl aspect-square"><span>Taças Carnaval</span><img src="imagens/entrega-6.jpg" alt="Taças térmicas personalizadas para Carnaval" onerror="this.remove()"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORÇAMENTO (FORM) ============ -->
+<section id="orcamento" class="py-16 md:py-24 bg-orange-soft">
+  <div class="max-w-6xl mx-auto px-5 lg:px-8 grid lg:grid-cols-5 gap-10 items-center">
+    <div class="lg:col-span-2">
+      <p class="eyebrow mb-3">Orçamento rápido</p>
+      <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight mb-4">Conte o que você precisa</h2>
+      <p class="text-ink-soft mb-6">Preencha em menos de 30 segundos. A conversa continua no WhatsApp, onde você já pode enviar o logo da empresa.</p>
+      <ul class="space-y-3 text-sm text-ink-soft">
+        <li class="flex gap-2"><span class="text-orange">✓</span>Atendimento direto com a equipe</li>
+        <li class="flex gap-2"><span class="text-orange">✓</span>Simulação da arte sem compromisso</li>
+        <li class="flex gap-2"><span class="text-orange">✓</span>Seus dados não são compartilhados</li>
+      </ul>
+    </div>
+
+    <form id="leadForm" class="lg:col-span-3 card p-6 md:p-9 shadow-xl" novalidate>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="sm:col-span-2">
+          <label for="nome" class="block text-sm font-medium mb-1.5">Seu nome</label>
+          <input id="nome" class="field" type="text" autocomplete="name" placeholder="Ana Souza" />
+          <p class="err hidden text-xs text-red-600 mt-1">Informe seu nome.</p>
+        </div>
+        <div>
+          <label for="empresa" class="block text-sm font-medium mb-1.5">Empresa ou evento</label>
+          <input id="empresa" class="field" type="text" autocomplete="organization" placeholder="Nome da empresa" />
+          <p class="err hidden text-xs text-red-600 mt-1">Informe a empresa ou evento.</p>
+        </div>
+        <div>
+          <label for="qtd" class="block text-sm font-medium mb-1.5">Quantidade</label>
+          <select id="qtd" class="field">
+            <option value="">Selecione</option>
+            <option>Até 30 unidades</option>
+            <option>31 a 100 unidades</option>
+            <option>101 a 300 unidades</option>
+            <option>Mais de 300 unidades</option>
+          </select>
+          <p class="err hidden text-xs text-red-600 mt-1">Selecione a quantidade.</p>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="produto" class="block text-sm font-medium mb-1.5">Produto de interesse</label>
+          <select id="produto" class="field">
+            <option>Copo térmico</option>
+            <option>Garrafa térmica</option>
+            <option>Taça térmica</option>
+            <option>Copo de café</option>
+            <option>Copo long drink</option>
+            <option>Luminária em acrílico</option>
+            <option>Ainda não sei, quero sugestões</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="data" class="block text-sm font-medium mb-1.5">Para quando você precisa?</label>
+          <select id="data" class="field">
+            <option>Sem data definida</option>
+            <option>Nos próximos 15 dias</option>
+            <option>Em até 30 dias</option>
+            <option>Para o fim do ano</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-full mt-6 text-base">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1112 21.8zM20.5 3.5A11.8 11.8 0 0012 0C5.5 0 .2 5.3.2 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7c1.7.9 3.7 1.4 5.7 1.4 6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3z"/></svg>
+        Enviar e continuar no WhatsApp
+      </button>
+      <p class="text-xs text-center text-ink-soft mt-3">Resposta em horário comercial.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="duvidas" class="py-16 md:py-24">
+  <div class="max-w-3xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-10 reveal">
+      <p class="eyebrow mb-3">Dúvidas frequentes</p>
+      <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Antes de pedir, talvez você queira saber</h2>
+    </div>
+    <div class="space-y-3">
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">Qual é a quantidade mínima por pedido?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Trabalhamos a partir de [XX] unidades. Para quantidades maiores, o valor por peça fica mais em conta.</p>
+      </details>
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">Vocês emitem nota fiscal para empresas?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">[Confirmar] Sim, emitimos nota fiscal para pessoa jurídica.</p>
+      </details>
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">Qual é o prazo de produção?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Em média [XX] dias úteis após a aprovação da arte. Para datas como fim de ano, recomendamos fazer o pedido com antecedência.</p>
+      </details>
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">Dá para gravar um nome diferente em cada peça?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Sim. Basta enviar a lista de nomes e gravamos cada peça individualmente, junto com o logo da empresa.</p>
+      </details>
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">A gravação sai com o tempo?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">Não. A gravação a laser marca o próprio material, então não descasca nem desbota com lavagem e uso diário.</p>
+      </details>
+      <details class="card p-5 md:p-6">
+        <summary class="flex justify-between items-center gap-4 font-display font-semibold text-base md:text-lg">Vocês entregam em outras cidades?<span class="chev text-orange text-2xl leading-none">+</span></summary>
+        <p class="text-ink-soft text-sm mt-3 leading-relaxed">[Confirmar área de entrega e frete com o cliente.]</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="px-5 lg:px-8 pb-16 md:pb-24">
+  <div class="max-w-6xl mx-auto bg-ink rounded-[32px] px-6 py-12 md:p-16 text-center text-white relative overflow-hidden">
+    <svg class="absolute -right-10 -top-10 opacity-10" width="260" height="260" viewBox="0 0 40 40" fill="none" stroke="#E8833A" stroke-width=".8"><path d="M20 3 L33 16 L20 29 L7 16 Z"/><path d="M20 11 L27 18 L20 25 L13 18 Z"/></svg>
+    <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight mb-4 relative">O fim de ano está chegando.<br class="hidden md:block"> <span class="text-orange">Garanta o brinde da sua equipe.</span></h2>
+    <p class="text-white/70 max-w-xl mx-auto mb-8 relative">Peça agora e receba a simulação da arte com a marca da sua empresa.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center relative">
+      <a href="#orcamento" class="btn btn-primary">Pedir orçamento</a>
+      <a href="https://wa.me/5516992046298?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20brindes%20personalizados." target="_blank" rel="noopener" class="btn btn-light">Falar direto no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-line py-10">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-col md:flex-row gap-6 md:items-center md:justify-between text-sm text-ink-soft">
+    <div>
+      <p class="font-display font-medium tracking-[.25em] text-orange mb-1">NIKENAUER</p>
+      <p>Brindes personalizados para empresas e eventos.</p>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      <a href="https://wa.me/5516992046298" class="hover:text-orange">(16) 99204-6298</a>
+      <a href="https://www.instagram.com/nikenauer/" target="_blank" rel="noopener" class="hover:text-orange">@nikenauer</a>
+    </div>
+    <p class="text-xs">© 2026 Nikenauer. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5516992046298?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg width="28" height="28" fill="#fff" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1112 21.8zM20.5 3.5A11.8 11.8 0 0012 0C5.5 0 .2 5.3.2 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7c1.7.9 3.7 1.4 5.7 1.4 6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3z"/></svg>
+</a>
+
+<!-- Barra fixa mobile -->
+<div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-white/95 border-t border-line px-4 pt-3 flex items-center gap-3" style="backdrop-filter: blur(10px); padding-bottom: calc(12px + env(safe-area-inset-bottom));">
+  <div class="flex-1 min-w-0">
+    <p class="font-display font-semibold text-sm leading-tight truncate">Brindes com a sua marca</p>
+    <p class="text-xs text-ink-soft truncate">Arte digital sem compromisso</p>
+  </div>
+  <a href="#orcamento" class="btn btn-primary !min-h-[46px] !px-5 text-sm whitespace-nowrap">Pedir orçamento</a>
+</div>
+
+<script>
+  const WA = '5516992046298';
+
+  // Rastreamento de cliques no WhatsApp
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+    a.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact', { method: 'whatsapp', link_text: (a.innerText || 'flutuante').trim() });
+        // gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXXX/YYYYYYYY' });
+      }
+    });
+  });
+
+  // Botão "Orçar este modelo" preenche o produto no formulário
+  document.querySelectorAll('.pick').forEach(el => {
+    el.addEventListener('click', () => {
+      const sel = document.getElementById('produto');
+      [...sel.options].forEach(o => { if (o.text === el.dataset.produto) sel.value = o.value; });
+    });
+  });
+
+  // Formulário com validação que abre o WhatsApp
+  const form = document.getElementById('leadForm');
+  ['nome', 'empresa', 'qtd'].forEach(id => {
+    document.getElementById(id).addEventListener('input', e => {
+      e.target.classList.remove('error');
+      e.target.parentElement.querySelector('.err').classList.add('hidden');
+    });
+  });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let ok = true;
+    ['nome', 'empresa', 'qtd'].forEach(id => {
+      const f = document.getElementById(id);
+      if (!f.value.trim()) {
+        ok = false;
+        f.classList.add('error');
+        f.parentElement.querySelector('.err').classList.remove('hidden');
+      }
+    });
+    if (!ok) return;
+
+    const v = id => document.getElementById(id).value;
+    const msg = `Olá! Vim pelo site e quero um orçamento.%0A%0A` +
+      `*Nome:* ${encodeURIComponent(v('nome'))}%0A` +
+      `*Empresa/evento:* ${encodeURIComponent(v('empresa'))}%0A` +
+      `*Produto:* ${encodeURIComponent(v('produto'))}%0A` +
+      `*Quantidade:* ${encodeURIComponent(v('qtd'))}%0A` +
+      `*Prazo:* ${encodeURIComponent(v('data'))}`;
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', { produto: v('produto'), quantidade: v('qtd') });
+      // gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXXX/ZZZZZZZZ' });
+    }
+    window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
+  });
+
+  // Animação de entrada suave
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
